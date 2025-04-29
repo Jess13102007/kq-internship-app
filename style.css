@@ -65,3 +65,12 @@ blockquote {
   font-weight: bold;
   font-style: normal;
 }
+
+.kq-photo {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  margin: 0 auto 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
