@@ -49,3 +49,19 @@ a {
   margin: 10px 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
+blockquote {
+  background: #f0f8ff;
+  border-left: 4px solid #0077cc;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-style: italic;
+  color: #333;
+}
+
+.quote-source {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-style: normal;
+}
