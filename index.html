@@ -1,76 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KQ Internship Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
   <header class="fade-in">
-    <h1>Hi, I'm Jess</h1>
-    <p>This is my creative application for the <strong>KQ Intern Programme</strong>.</p>
+    <div class="container">
+      <h1>Hi, I'm Jess</h1>
+      <p>This is my creative application for the <strong>KQ Intern Programme</strong>.</p>
+      <a href="#contact" class="contact-btn">Get in touch</a>
+    </div>
   </header>
 
   <section id="why" class="fade-in">
-    <h2>Why I Want to Join KQ</h2>
-    <p>I’ve always been passionate about STEM, especially as a woman in science. The KQ Intern Programme’s focus on innovation, collaboration, and real-world impact is exactly what interests me. I want to contribute, learn, and be inspired.</p>
+    <div class="container">
+      <h2>Why I Want to Join KQ</h2>
+      <div class="section-content">
+        <p>I've always been passionate about STEM, especially as a woman in science. The KQ Intern Programme's focus on innovation, collaboration, and real-world impact is exactly what interests me. I want to contribute, learn, and be inspired.</p>
+      </div>
+    </div>
   </section>
 
   <section id="goals" class="fade-in">
-    <h2>What I Hope to Gain</h2>
-    <ul>
-      <li>Work with creative, interesting people</li>
-      <li>Apply my STEM skills to real-world challenges</li>
-      <li>Grow my confidence in hands-on research and work</li>
-    </ul>
+    <div class="container">
+      <h2>What I Hope to Gain</h2>
+      <ul>
+        <li>Work with creative, interesting people across different disciplines</li>
+        <li>Apply my STEM skills to real-world challenges and innovative projects</li>
+        <li>Grow my confidence in hands-on research and professional development</li>
+        <li>Build a network with industry professionals and fellow interns</li>
+      </ul>
+    </div>
   </section>
 
   <section id="projects" class="fade-in">
-    <h2>My Projects</h2>
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <div class="project-image-container">
+            <img src="images/fill-finish.png" alt="Fill-Finish Project Screenshot" />
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Data Analysis</span>
+              <span class="tag">Python</span>
+              <span class="tag">Machine Learning</span>
+            </div>
+            <h3>Fill-Finish Manufacturing Project</h3>
+            <p>This project aimed to improve fill-finish accuracy in pharmaceutical manufacturing through data analysis and predictive modelling. I used Python libraries including <code>pandas</code>, <code>seaborn</code>, <code>scikit-learn</code>, and <code>RandomForestRegressor</code> to identify key variables and reduce variability in production outcomes.</p>
+            <p>The project was overseen by <strong>Gwyn Jones, Head of Process Mechanical of the PM Group</strong>, who provided technical feedback and industry insight.</p>
+            <blockquote>
+              "I was genuinely in awe of the detailed research undertaken, presentation skills, intuition and the cross-discipline thinking. Some of the ideas had me stumped. Issues on data security, ethical issues of AI decision models on safety critical equipment and a whole host of others."
+              <span class="quote-source">– Gwyn, PM Group</span>
+            </blockquote>
+          </div>
+        </div>
 
-    <div class="project">
-      <h3>Fill-Finish Manufacturing Project</h3>
-      <img src="images/fill-finish.png" alt="Fill-Finish Project Screenshot" />
-      <p>This project aimed to improve fill-finish accuracy in pharmaceutical manufacturing through data analysis and predictive modeling. I used Python libraries including <code>pandas</code>, <code>seaborn</code>, <code>scikit-learn</code>, and <code>RandomForestRegressor</code> to identify key variables and reduce variability in production outcomes.</p>
+        <div class="project">
+          <div class="project-image-container">
+            <img src="images/school-website.png" alt="School Website Screenshot" />
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Web Design</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">UI/UX</span>
+            </div>
+            <h3>School Website Project</h3>
+            <p>Designed a responsive website from scratch using HTML/CSS for a school presentation. It included interactive pages and clean UI design that enhanced user experience and information accessibility.</p>
+          </div>
+        </div>
 
-      <p>The project was overseen by <strong>Gwyn Jones, Head of Process Mechanical of the PM Group</strong>, who provided technical feedback and industry insight.</p>
-
-      <blockquote>
-        “I was genuinely in awe of the detailed research undertaken, presentation skills, intuition and the cross-discipline thinking. Some of the ideas had me stumped. Issues on data security, ethical issues of AI decision models on safety critical equipment and a whole host of others.”
-        <br><span class="quote-source">– Gwyn, PM Group</span>
-      </blockquote>
-    </div>
-
-    <div class="project">
-      <h3>School Website Project</h3>
-      <img src="images/school-website.png" alt="School Website Screenshot" />
-      <p>Designed a responsive website from scratch using HTML/CSS for a school presentation. It included interactive pages and clean UI design.</p>
-    </div>
-
-    <div class="project">
-      <h3>Tennis Ball Spin Physics Experiment</h3>
-      <img src="images/tennis-spin.png" alt="Physics Experiment Screenshot" />
-      <p>Led a physics investigation to test how spin rate affects velocity at constant applied force using the magnus effect. We used software, video tracking, and mechanics knowledge to analyze results.</p>
+        <div class="project">
+          <div class="project-image-container">
+            <img src="images/tennis-spin.png" alt="Physics Experiment Screenshot" />
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Physics</span>
+              <span class="tag">Data Tracking</span>
+              <span class="tag">Research</span>
+            </div>
+            <h3>Tennis Ball Spin Physics Experiment</h3>
+            <p>Led a physics investigation to test how spin rate affects velocity at constant applied force using the magnus effect. We used software, video tracking, and mechanics knowledge to analyse results and draw conclusions about the relationship between spin and trajectory.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="kq-experience" class="fade-in">
-    <h2>My Experience with the Knowledge Quarter</h2>
-
-    <img src="images/kq-visit.jpg" alt="Photo from KQ Visit" class="kq-photo" />
-
-    <p>I’ve had the opportunity to visit the Knowledge Quarter before. I took part in workplace tours and attended talks that gave me an insight into how this type of work really happens in practice.</p>
-    <p>During one of these visits, I even won a small informal competition designed to develop our soft skills, which gave me more confidence in my ability to express and translate ideas.</p>
+    <div class="container">
+      <h2>My Experience with the Knowledge Quarter</h2>
+      <div class="experience-content">
+        <img src="images/kq-visit.jpg" alt="Photo from KQ Visit" class="kq-photo" />
+        <div class="experience-text">
+          <p>I've had the opportunity to visit the Knowledge Quarter before. I took part in workplace tours and attended talks that gave me an insight into how this type of work really happens in practice.</p>
+          <p>During one of these visits, I even won a small informal competition designed to develop our soft skills, which gave me more confidence in my ability to express and translate ideas.</p>
+          <p>This experience only strengthened my desire to be part of the KQ community and contribute to its innovative ecosystem.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="fun-fact" class="fade-in">
-    <h2>Fun Fact!</h2>
-    <p>I can identify any country by its shape.</p>
+    <div class="container">
+      <h2>Fun Fact!</h2>
+      <p><i class="fas fa-globe-americas"></i> I can identify any country by its shape.</p>
+    </div>
   </section>
 
-  <footer>
-    <p>Thanks for reading! You can reach me at <a href="mailto:jessicaal1307@gmail.com">jessicaal1307@gmail.com</a></p>
+  <footer id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Thanks for reading! I'd love to discuss how I can contribute to the KQ Intern Programme.</p>
+      <p>You can reach me at <a href="mailto:jessicaal1307@gmail.com"><i class="fas fa-envelope"></i> jessicaal1307@gmail.com</a></p>
+      <div class="social-links">
+        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    // Simple script to handle fade-in animation on scroll
+    document.addEventListener('DOMContentLoaded', function() {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      
+      function checkFade() {
+        fadeElements.forEach(element => {
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150;
+          
+          if (elementTop < window.innerHeight - elementVisible) {
+            element.classList.add('active');
+          }
+        });
+      }
+      
+      window.addEventListener('scroll', checkFade);
+      checkFade(); // Check on initial load
+    });
+  </script>
 </body>
 </html>
