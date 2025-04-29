@@ -1,76 +1,107 @@
+/* Global Styles */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: #fdfdfd;
+  background: #f8f9fa;
   color: #333;
 }
 
 header {
-  background: #222;
-  color: white;
+  background: linear-gradient(135deg, #ffb3c1, #a8caff);
   padding: 2rem;
   text-align: center;
+  border-bottom: 10px solid #e37027;
+  border-radius: 0 0 20px 20px;
 }
 
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Section Styling */
 section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+  padding: 3rem 1rem;
+  margin: 2rem 0;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 0.3rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #3f3f3f;
 }
 
+/* Project Cards */
 .project {
-  background: #f4f4f4;
-  padding: 1rem;
-  margin-top: 1rem;
-  border-left: 5px solid #0077cc;
+  margin-bottom: 2rem;
+  background-color: #e9f7ff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}
-a {
-  color: #4da4f7;
-  text-decoration: none;
-}
 .project img {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
+  height: auto;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-blockquote {
-  background: #f0f8ff;
-  border-left: 4px solid #0077cc;
-  margin: 1rem 0;
-  padding: 1rem;
-  font-style: italic;
+/* Footer */
+footer {
+  text-align: center;
+  background: #a8caff;
+  padding: 2rem;
   color: #333;
 }
 
-.quote-source {
-  display: block;
-  margin-top: 0.5rem;
-  font-weight: bold;
-  font-style: normal;
+footer a {
+  color: #e37027;
+  text-decoration: none;
 }
 
+/* Photo Styling */
 .kq-photo {
   display: block;
-  max-width: 300px;
-  width: 100%;
+  max-width: 250px;
   border-radius: 12px;
-  margin: 0 auto 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    padding: 1.5rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+}
+
