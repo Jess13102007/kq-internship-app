@@ -138,40 +138,102 @@
     </div>
   </section>
 
-    <section id="testimonials" class="fade-in">
+<section id="testimonials" class="fade-in">
   <div class="container">
     <h2>Teacher Testimonials</h2>
     <div class="projects-grid">
       <div class="project">
         <div class="project-content">
-          <blockquote>
-            "Jessica is a very reliable student. She hands all her homework within the deadline and done to the best standards. She’s a very good physicist, producing really good results both mathematically and experimentally. She’s very trustworthy, which she often shows by helping other students and always standing by her word. I would certainly recommend her for the internship she’s applying for."
-            <span class="quote-source">-Dr. Aurora Gutierrez-Sosa, Head of Physics </span>
-          </blockquote>
+          <div class="teacher-profile">
+            <div class="teacher-image">
+              <img src="aurora.png" alt="Dr. Aurora Gutierrez-Sosa" class="circular-image">
+            </div>
+            <blockquote>
+              "Jessica is a very reliable student. She hands all her homework within the deadline and done to the best standards. She's a very good physicist, producing really good results both mathematically and experimentally. She's very trustworthy, which she often shows by helping other students and always standing by her word. I would certainly recommend her for the internship she's applying for."
+              <span class="quote-source">-Dr. Aurora Gutierrez-Sosa, Head of Physics </span>
+            </blockquote>
+          </div>
         </div>
       </div>
       
       <div class="project">
         <div class="project-content">
-          <blockquote>
-            "Jess consistently demonstrates strong analytical thinking and a genuine enthusiasm for computer science. Her ability to tackle complex problems with creativity and focus sets her apart."
-            <span class="quote-source"> -Tracy Birkett, Computer Science Teacher </span>
-          </blockquote>
+          <div class="teacher-profile">
+            <div class="teacher-image">
+              <img src="tracy.png" alt="Tracy Birkett" class="circular-image">
+            </div>
+            <blockquote>
+              "Jess consistently demonstrates strong analytical thinking and a genuine enthusiasm for computer science. Her ability to tackle complex problems with creativity and focus sets her apart."
+              <span class="quote-source"> -Tracy Birkett, Computer Science Teacher </span>
+            </blockquote>
+          </div>
         </div>
       </div>
       
       <div class="project">
         <div class="project-content">
-          <blockquote>
-            "Jess is sharp, thoughtful, and always asks the kind of questions that get everyone thinking. She’s great at maths, but even better at connecting ideas and people — a real natural in any collaborative setting."
-            <span class="quote-source">–Maria Bennett, Head of Outreach and Maths Teacher</span>
-          </blockquote>
+          <div class="teacher-profile">
+            <div class="teacher-image">
+              <img src="maria.png" alt="Maria Bennett" class="circular-image">
+            </div>
+            <blockquote>
+              "Jess is sharp, thoughtful, and always asks the kind of questions that get everyone thinking. She's great at maths, but even better at connecting ideas and people — a real natural in any collaborative setting."
+              <span class="quote-source">–Maria Bennett, Head of Outreach and Maths Teacher</span>
+            </blockquote>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</section>
 
+  <style>
+    .teacher-profile {
+      display: flex;
+      align-items: center;
+    }
+    
+    .teacher-image {
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+    
+    .circular-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #3498db;
+    }
+    
+    blockquote {
+      margin: 0;
+      flex-grow: 1;
+    }
+    
+    .quote-source {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      text-align: right;
+    }
+    
+    @media (max-width: 768px) {
+      .teacher-profile {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .teacher-image {
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+      
+      .quote-source {
+        text-align: center;
+      }
+    }
+  </style>
+</section>
   
 
   <section id="kq-experience" class="fade-in">
