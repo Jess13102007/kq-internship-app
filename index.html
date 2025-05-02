@@ -145,9 +145,7 @@
       <div class="project">
         <div class="project-content">
           <div class="teacher-profile">
-            <div class="teacher-image">
-              <img src="images/aurora.png" alt="Dr. Aurora Gutierrez-Sosa" class="circular-image" />
-            </div>
+            <img src="images/aurora.png" alt="Dr. Aurora Gutierrez-Sosa" class="circular-image" />
             <blockquote>
               "Jessica is a very reliable student. She hands all her homework within the deadline and done to the best standards. She's a very good physicist, producing really good results both mathematically and experimentally. She's very trustworthy, which she often shows by helping other students and always standing by her word. I would certainly recommend her for the internship she's applying for."
               <span class="quote-source">-Dr. Aurora Gutierrez-Sosa, Head of Physics </span>
@@ -159,9 +157,7 @@
       <div class="project">
         <div class="project-content">
           <div class="teacher-profile">
-            <div class="teacher-image">
-              <img src="images/tracy.png" alt="Tracy Birkett" class="circular-image" />
-            </div>
+            <img src="images/tracy.png" alt="Tracy Birkett" class="circular-image" />
             <blockquote>
               "Jess consistently demonstrates strong analytical thinking and a genuine enthusiasm for computer science. Her ability to tackle complex problems with creativity and focus sets her apart."
               <span class="quote-source"> -Tracy Birkett, Computer Science Teacher </span>
@@ -173,9 +169,7 @@
       <div class="project">
         <div class="project-content">
           <div class="teacher-profile">
-            <div class="teacher-image">
-              <img src="images/maria.png" alt="Maria Bennett" class="circular-image" />
-            </div>
+            <img src="images/maria.png" alt="Maria Bennett" class="circular-image" />
             <blockquote>
               "Jess is sharp, thoughtful, and always asks the kind of questions that get everyone thinking. She's great at maths, but even better at connecting ideas and people — a real natural in any collaborative setting."
               <span class="quote-source">–Maria Bennett, Head of Outreach and Maths Teacher</span>
@@ -185,24 +179,21 @@
       </div>
     </div>
   </div>
-
   <style>
     .teacher-profile {
       display: flex;
-      align-items: center;
-    }
-    
-    .teacher-image {
-      margin-right: 20px;
-      flex-shrink: 0;
+      align-items: flex-start;
+      margin-bottom: 20px;
     }
     
     .circular-image {
-      width: 50px;
-      height: 50px;
+      width: 35px;
+      height: 35px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #3498db;
+      border: 2px solid #3498db;
+      margin-right: 15px;
+      margin-top: 5px;
     }
     
     blockquote {
@@ -212,24 +203,20 @@
     
     .quote-source {
       display: block;
-      margin-top: 10px;
+      margin-top: 8px;
       font-weight: bold;
       text-align: right;
+      font-size: 0.9em;
     }
     
     @media (max-width: 768px) {
       .teacher-profile {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        text-align: left;
       }
       
-      .teacher-image {
-        margin-right: 0;
-        margin-bottom: 15px;
-      }
-      
-      .quote-source {
-        text-align: center;
+      .circular-image {
+        margin-top: 5px;
       }
     }
   </style>
